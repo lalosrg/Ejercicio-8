@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link id="estilo" rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+    <div class="botones-contenedor">
+        <button class="btn" id="btnCambiarEstilos">Cambiar estilos</button>
+        <button class="btn" id="btnCambiarEstilosRandom">
+            <img style="width: 20px;"
+                src="https://cdn1.iconfinder.com/data/icons/navigation-elements/512/round-motion-rotate-arrows-circle-512.png" /></button>
+        <button class="btn" id="btnRecordarEstilos">Recordar</button>
+    </div>
+
+    <select id="selectCambiarEstilos">
+        <option value="estilos.css">Estilo 1</option>
+        <option value="estilos-retro.css">Estilo 2</option>
+        <option value="">Estilo 3</option>
+        <option value="">Sin Estilos</option>
+    </select>
+
+    <div class="contenedor-elemento radios">
+        <div class="contenedor-radio "><input name="estilo" class="elemento" type="radio" value="estilos.css" /><span
+                class="label-radio">Estilo 1</span>
+        </div>
+        <div class="contenedor-radio "><input name="estilo" class="elemento" type="radio"
+                value="estilos-retro.css" /><span class="label-radio">Estilo 2</span></div>
+        <div class="contenedor-radio "><input name="estilo" class="elemento" type="radio" value="" /><span
+                class="label-radio">Estilo
+                3</span></div>
+        <div class="contenedor-radio "><input name="estilo" class="elemento" type="radio" value="" /><span
+                class="label-radio">Sin
+                estilo</span></div>
+    </div>
+
+    <form class="form">
+        <h1 class="titulo">Vení al Gym! 💪</h1>
+
+        <fieldset class="contenedor">
+            <legend>👋 Datos Personales 👀</legend>
+
+            <div class="contenedor-elemento">
+                <label for="nombre">Nombre:*</label>
+                <input required class="elemento" id="nombre"></input>
+            </div>
+
+            <div class="contenedor-elemento">
+                <label for="apellido">Apellido:*</label>
+                <input required class="elemento" id="apellido"></input>
+            </div>
+
+            <div class="contenedor-elemento">
+                <label for="documento">Documento:*</label>
+                <input required class="elemento" id="documento"></input>
+            </div>
+
+            <div class="contenedor-elemento">
+                <label for="nacionalidad">Nacionalidad:*</label>
+                <select required class="elemento" id="nacionalidad">
+                    <option value="">- Seleccionar -</option>
+                    <option value="argentino">Argentino</option>
+                </select>
+            </div>
+
+            <div class="contenedor-elemento">
+                <label for="detalles">Contanos un poco de vos...</label>
+                <textarea required class="elemento" rows="6" id="detalles"></textarea>
+            </div>
+
+            <label>Sexo:*</label>
+            <div class="contenedor-elemento radios">
+                <div class="contenedor-radio "><input class="elemento" name="sexo" type="radio" />Femenino</div>
+                <div class="contenedor-radio "><input class="elemento" name="sexo" type="radio" />Masculino</div>
+                <div class="contenedor-radio "><input class="elemento" name="sexo" type="radio" />Otro</div>
+            </div>
+        </fieldset>
+    </form>
+    <br>
+
+    <form class="contact">
+        <fieldset class="contenedor">
+            <legend>📲 Datos de Contacto ✉️</legend>
+            <div class="contenedor-elemento">
+                <label for="telefono">Telefono:</label>
+                <input required class="elemento" id="telefono" placeholder="Codigo de Area y numero"></input>
+            </div>
+            <div class="contenedor-elemento">
+                <label for="correo">Direccion de correo electronico:*</label>
+                <input required class="elemento" id="correo" placeholder="Ej: mail@gmail.com"></input>
+            </div>
+        </fieldset>
+    </form>
+
+    <br>
+
+    <form class="contact">
+        <fieldset class="contenedor">
+            <legend>🚴 Actividades 🤸‍♀️</legend>
+            <div class="contenedor-elemento">
+              <p style="font-size: small;  ">Por favor, indica cuales actividades te interesan.</p>
+              <h5>Sede Palermo</h5>
+
+    <div class="checkbox-container">
+        <label for="basquet">
+        <input type="checkbox" id="basquet" name="actividades"> Basquet
+        </label>
+        <label for="boxeo">
+        <input type="checkbox" id="boxeo" name="actividades"> Boxeo
+        </label>
+        <label for="futbol">
+        <input type="checkbox" id="futbol" name="actividades"> Futbol
+        </label>
+        <label for="tenis">
+        <input type="checkbox" id="tenis" name="actividades"> Tenis
+        </label>
+    </div>
+
+    <h5>Sede Rosario</h5>
+    <div class="checkbox-container">
+        <label for="basquet">
+        <input type="checkbox" id="basquet" name="actividades"> Basquet
+        </label>
+        <label for="futbol">
+        <input type="checkbox" id="futbol" name="actividades"> Futbol
+        </label>
+        <label for="rubgy">
+        <input type="checkbox" id="rugby" name="actividades"> Rugby
+        </label>
+        <label for="voley">
+        <input type="checkbox" id="voley" name="actividades"> Voley
+        </label>
+    </div>
+
+
+            </div>
+        </fieldset>
+    </form>
+    <br>
+
+    <div class="condiciones">
+        <label for="condiciones" class="checkbox-container">
+            <input type="checkbox" id="condiciones" name="condiciones"> Acepto las condiciones
+          </label>
+        
+          <label for="novedades" class="checkbox-container">
+            <input type="checkbox" id="novedades" name="novedades"> Deseo recibir novedades
+          </label>
+          <p>*: Campo obligatorio.</p>
+    </div>
+    <br>
+
+    <button type="submit">Iniciar afilación</button>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

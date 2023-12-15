@@ -1,0 +1,141 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.botones-contenedor {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 25px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    color: #1f2023;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px #7c7c7c;
+}
+
+.presionado {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.label-radio {
+    color: white !important;
+}
+
+#selectCambiarEstilos {
+    margin: 20px 0;
+    min-width: 100px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1f2023;
+}
+
+.titulo {
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+fieldset legend {
+    background-color: #4d6d63;
+    padding: 5px 10px;
+    font-size: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+fieldset legend::first-letter {
+    font-size: 15px;
+}
+
+form {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 550px;
+    background-color: #d6e2de;
+    /* margin: 0 10px; */
+}
+
+.contenedor.activo {
+    background-color: #a4beb8;
+}
+
+.contenedor.activo legend {
+    background-color: #2b3d37;
+}
+
+.contenedor-elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 80%;
+}
+
+.contenedor-elemento.radios {
+    flex-direction: row !important;
+}
+
+.contenedor input,
+.contenedor select,
+.contenedor textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+}
+
+.contenedor input.activo {
+    background-color: red;
+}
+
+.contenedor label {
+    font-size: 12px;
+}
+
+.contenedor-radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container label {
+    display: block;
+  }
+
+  .condiciones{
+    color: #fff;
+    margin-left: 0;
+  }
